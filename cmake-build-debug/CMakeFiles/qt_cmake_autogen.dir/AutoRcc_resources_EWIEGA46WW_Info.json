@@ -1,0 +1,22 @@
+{
+	"BUILD_DIR" : "/home/s15o/qt_cmake/cmake-build-debug/qt_cmake_autogen",
+	"CMAKE_BINARY_DIR" : "/home/s15o/qt_cmake/cmake-build-debug",
+	"CMAKE_CURRENT_BINARY_DIR" : "/home/s15o/qt_cmake/cmake-build-debug",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/home/s15o/qt_cmake",
+	"CMAKE_SOURCE_DIR" : "/home/s15o/qt_cmake",
+	"CROSS_CONFIG" : false,
+	"GENERATOR" : "Ninja",
+	"INCLUDE_DIR" : "/home/s15o/qt_cmake/cmake-build-debug/qt_cmake_autogen/include",
+	"INPUTS" : [ "/home/s15o/qt_cmake/main.qml" ],
+	"LOCK_FILE" : "/home/s15o/qt_cmake/cmake-build-debug/CMakeFiles/qt_cmake_autogen.dir/AutoRcc_resources_EWIEGA46WW_Lock.lock",
+	"MULTI_CONFIG" : false,
+	"OPTIONS" : [ "-name", "resources" ],
+	"OUTPUT_CHECKSUM" : "EWIEGA46WW",
+	"OUTPUT_NAME" : "qrc_resources.cpp",
+	"RCC_EXECUTABLE" : "/usr/local/qt6/libexec/rcc",
+	"RCC_LIST_OPTIONS" : [ "--list" ],
+	"SETTINGS_FILE" : "/home/s15o/qt_cmake/cmake-build-debug/CMakeFiles/qt_cmake_autogen.dir/AutoRcc_resources_EWIEGA46WW_Used.txt",
+	"SOURCE" : "/home/s15o/qt_cmake/resources.qrc",
+	"USE_BETTER_GRAPH" : true,
+	"VERBOSITY" : 0
+}

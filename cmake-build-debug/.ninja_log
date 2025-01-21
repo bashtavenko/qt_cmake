@@ -1,0 +1,17 @@
+# ninja log v6
+3	36	1737493628637921597	qt_cmake_autogen/timestamp	a1f5ff29f4764ddb
+3	36	1737493628637921597	qt_cmake_autogen/mocs_compilation.cpp	a1f5ff29f4764ddb
+3	36	1737493628637921597	/home/s15o/qt_cmake/cmake-build-debug/qt_cmake_autogen/timestamp	a1f5ff29f4764ddb
+3	36	1737493628637921597	/home/s15o/qt_cmake/cmake-build-debug/qt_cmake_autogen/mocs_compilation.cpp	a1f5ff29f4764ddb
+37	45	1737493628651921677	qt_cmake_autogen/EWIEGA46WW/qrc_resources.cpp	99eb81b6951633
+37	45	1737493628651921677	/home/s15o/qt_cmake/cmake-build-debug/qt_cmake_autogen/EWIEGA46WW/qrc_resources.cpp	99eb81b6951633
+45	62	1737493628653921688	CMakeFiles/qt_cmake.dir/qt_cmake_autogen/mocs_compilation.cpp.o	9378778293f085f2
+45	73	1737493628653921688	CMakeFiles/qt_cmake.dir/qt_cmake_autogen/EWIEGA46WW/qrc_resources.cpp.o	813c6f814b9b19c
+45	2856	1737493628653921688	CMakeFiles/qt_cmake.dir/main.cpp.o	bae408e3773f96cf
+2857	3189	1737493631465937755	qt_cmake	93d74f002eeea57b
+3	13	1737493797042985413	qt_cmake_autogen/timestamp	a1f5ff29f4764ddb
+3	13	1737493797042985413	qt_cmake_autogen/mocs_compilation.cpp	a1f5ff29f4764ddb
+3	13	1737493797042985413	/home/s15o/qt_cmake/cmake-build-debug/qt_cmake_autogen/timestamp	a1f5ff29f4764ddb
+3	13	1737493797042985413	/home/s15o/qt_cmake/cmake-build-debug/qt_cmake_autogen/mocs_compilation.cpp	a1f5ff29f4764ddb
+13	1880	1737493797052985482	CMakeFiles/qt_cmake.dir/main.cpp.o	bae408e3773f96cf
+1881	2250	1737493798920998322	qt_cmake	93d74f002eeea57b

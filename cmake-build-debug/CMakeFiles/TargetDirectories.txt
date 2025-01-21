@@ -1,0 +1,5 @@
+/home/s15o/qt_cmake/cmake-build-debug/CMakeFiles/qt_cmake.dir
+/home/s15o/qt_cmake/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/s15o/qt_cmake/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/s15o/qt_cmake/cmake-build-debug/CMakeFiles/qt_cmake_autogen_timestamp_deps.dir
+/home/s15o/qt_cmake/cmake-build-debug/CMakeFiles/qt_cmake_autogen.dir
