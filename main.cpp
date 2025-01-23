@@ -13,11 +13,15 @@ int main(int argc, char* argv[]) {
 
   QTimer timer;
   QObject::connect(&timer, &QTimer::timeout, [&]() {
-    QVariantMap new_point;
-    new_point["angle"] = static_cast<double>(std::rand() % 360);
-    new_point["distance"] = 0.4;
-    model.setPoint(new_point);
+    QVariantList batchPoints;
+    for (int i = 0; i < 100; ++i) {  // Simulating a full sensor sweep
+      QVariantMap point;
+      point["angle"] = std::rand() % 360;
+      point["distance"] = static_cast<double>(std::rand()) / RAND_MAX;
+      batchPoints.append(point);
+    }
+    model.SetPoints(batchPoints);
   });
-  timer.start(1000);
+  timer.start(2000);
   return app.exec();
 }

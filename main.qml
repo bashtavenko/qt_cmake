@@ -5,6 +5,13 @@ Item {
     width: 800
     height: 600
 
+    function updatePoints(points) {
+        lidarSeries.clear();
+        for (var i = 0; i < points.length; i++) {
+            lidarSeries.append(points[i].angle, points[i].distance);
+        }
+    }
+
     PolarChartView {
         id: chart
         title: "Lidar Scan Data"
@@ -24,25 +31,26 @@ Item {
             min: 0
             max: 1
             labelFormat: "%.1f"
+
         }
 
         ScatterSeries {
             id: lidarSeries
             axisAngular: axisAngular
             axisRadial: axisRadial
-            markerSize: 10
+            markerSize: 5
         }
 
         Component.onCompleted: {
-            lidarSeries.append(scanData.point.angle, scanData.point.distance);
-        }
-        Connections {
-            target: scanData
-            function onPointChanged() {
-                // lidarSeries.clear();
-                lidarSeries.append(scanData.point.angle, scanData.point.distance);
-            }
+            updatePoints(scanData.points);
         }
 
+        Connections {
+            target: scanData
+
+            function onPointsChanged() {
+                updatePoints(scanData.points);
+            }
+        }
     }
 }

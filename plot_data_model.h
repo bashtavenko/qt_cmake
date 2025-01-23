@@ -6,24 +6,24 @@
 
 class PlotDataModel : public QObject {
   Q_OBJECT
-  Q_PROPERTY(QVariantMap point READ point WRITE setPoint NOTIFY pointChanged)
+  Q_PROPERTY(QVariantList points READ Points WRITE SetPoints NOTIFY PointsChanged)
 
  public:
   explicit PlotDataModel(QObject* parent = nullptr) : QObject(parent) {
-    point_["angle"] = std::numeric_limits<float>::max();
-    point_["distance"] = std::numeric_limits<float>::max();
+//    point_["angle"] = std::numeric_limits<float>::max();
+//    point_["distance"] = std::numeric_limits<float>::max();
   }
 
-  QVariantMap point() const { return point_; }
+  QVariantList Points() const { return points_; }
 
  public slots:
-  void setPoint(const QVariantMap& point);
+  void SetPoints(const QVariantList& point);
 
  signals:
-  void pointChanged();
+  void PointsChanged();
 
  private:
-  QVariantMap point_;
+  QVariantList points_;
 };
 
 #endif  // QT_CMAKE__PLOT_DATA_MODEL_H_
