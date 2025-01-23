@@ -31,6 +31,7 @@
 *.out
 *.app
 
+
 # CLion, PyCharm
 .idea/
 .clwb/
@@ -39,3 +40,4 @@ third_party
 
 qt_generated/*.cc
 
+cmake-build-debug/

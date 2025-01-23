@@ -8,7 +8,9 @@ set(CMAKE_AUTOUIC ON)
 
 find_package(Qt6 REQUIRED COMPONENTS Charts Core Gui Qml Quick)
 
-add_executable(qt_cmake main.cpp resources.qrc)
+add_executable(qt_cmake main.cpp resources.qrc
+        plot_data_model.cpp
+        plot_data_model.h)
 target_link_libraries(qt_cmake
         Qt::Charts
         Qt::Core

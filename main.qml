@@ -1,16 +1,48 @@
-import QtQuick 2.0
-import QtCharts 2.0
+import QtQuick 2.15
+import QtCharts 2.15
 
-ChartView {
-    id: chart
-    width: 400
-    height: 300
+Item {
+    width: 800
+    height: 600
 
-    title: "My Chart"  // Ensure no missing properties or bindings
+    PolarChartView {
+        id: chart
+        title: "Lidar Scan Data"
+        anchors.fill: parent
+        legend.visible: false
+        antialiasing: true
 
-    LineSeries {
-        name: "Data"
-        XYPoint { x: 0; y: 0 }
-        XYPoint { x: 1; y: 1 }
+        ValueAxis {
+            id: axisAngular
+            min: 0
+            max: 360
+            tickCount: 9
+        }
+
+        ValueAxis {
+            id: axisRadial
+            min: 0
+            max: 1
+            labelFormat: "%.1f"
+        }
+
+        ScatterSeries {
+            id: lidarSeries
+            axisAngular: axisAngular
+            axisRadial: axisRadial
+            markerSize: 10
+        }
+
+        Component.onCompleted: {
+            lidarSeries.append(scanData.point.angle, scanData.point.distance);
+        }
+        Connections {
+            target: scanData
+            function onPointChanged() {
+                // lidarSeries.clear();
+                lidarSeries.append(scanData.point.angle, scanData.point.distance);
+            }
+        }
+
     }
 }
