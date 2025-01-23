@@ -1,5 +1,5 @@
-import QtQuick 2.15
-import QtCharts 2.15
+import QtQuick
+import QtCharts
 
 Item {
     width: 800
